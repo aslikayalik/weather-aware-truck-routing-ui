@@ -387,7 +387,7 @@
     },
     "errors": {
       "roleNotFound": "Kullanıcının rolü bulunamadı!",
-      "insufficientRank": "Bu işlemi gerçekleştirmek için yetkiniz bulunmuyor. Kendi rütbenizden düşük rütbeli kullanıcılar üzerinde işlem yapabilirsiniz."
+      "insufficientRank": "Bu işlemi gerçekleştirmek için yetkiniz bulunmuyor. Yalnızca kendi rütbenize eşit veya daha düşük rütbeli kullanıcılar üzerinde işlem yapabilirsiniz."
     }
   },
   "menu": {

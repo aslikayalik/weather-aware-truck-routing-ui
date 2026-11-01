@@ -26,5 +26,5 @@ export const canManageUser = (
   actingRank: number | null | undefined,
   targetRank: number | null | undefined,
 ): boolean => {
-  return (actingRank ?? 0) > (targetRank ?? 0);
+  return (actingRank ?? 0) >= (targetRank ?? 0);
 };

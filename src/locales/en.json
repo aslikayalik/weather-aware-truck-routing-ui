@@ -357,7 +357,7 @@
     },
     "errors": {
       "roleNotFound": "User role not found!",
-      "insufficientRank": "You do not have permission to perform this action. You can only manage users with a lower rank than your own."
+      "insufficientRank": "You do not have permission to perform this action. You can only manage users ranked at or below your own."
     }
   },
   "menu": {

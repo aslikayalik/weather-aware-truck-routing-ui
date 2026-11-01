@@ -24,11 +24,11 @@ const UserForm = () => {
   const { data: userRolesResp, isLoading: isUserRolesLoading } = useGetUserRolesQuery({ page: 0, rowsPerPage: 1000 });
   const userRoles = userRolesResp?.results ?? [];
 
-  // The backend does not allow assigning roles ranked equal to or above the user's own
+  // The backend does not allow assigning roles ranked above the user's own
   const currentUserRank = currentUser?.role_detail?.rank;
   const selectableRoles = currentUser?.is_superuser || currentUserRank === undefined || currentUserRank === null
     ? userRoles
-    : userRoles.filter((role) => role.rank < currentUserRank);
+    : userRoles.filter((role) => role.rank <= currentUserRank);
 
   const {
     register,

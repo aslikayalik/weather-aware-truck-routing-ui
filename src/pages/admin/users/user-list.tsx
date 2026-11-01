@@ -263,7 +263,7 @@ const UserList = () => {
       return;
     }
 
-    // Role ID'yi bul
+    // Resolve the role id
     const roleId = userObj?.role_detail?.id ||
       (typeof userObj?.role === 'string' && /^[0-9a-fA-F-]{36}$/.test(userObj.role) ? userObj.role : '');
 
