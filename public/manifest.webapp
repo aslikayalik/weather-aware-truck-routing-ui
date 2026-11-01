@@ -1,0 +1,31 @@
+{
+  "name": "Weather-Aware Truck Routing",
+  "short_name": "WeatherAwareTruckRouting",
+  "icons": [
+    {
+      "src": "./content/images/app-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./content/images/app-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "./content/images/app-384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "./content/images/app-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#000000",
+  "background_color": "#e0e0e0",
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait"
+}

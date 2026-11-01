@@ -1,0 +1,497 @@
+{
+  "captcha": {
+    "label": "Güvenlik Kodu",
+    "placeholder": "Yukarıdaki kodu girin",
+    "refresh": "Yenile",
+    "loading": "Captcha yükleniyor...",
+    "imageError": "Görüntü yüklenemedi",
+    "checkBackend": "Backend ayarlarını kontrol edin",
+    "required": "Lütfen güvenlik kodunu girin.",
+    "invalid": "Güvenlik kodu hatalı. Lütfen yeniden deneyin.",
+    "validationError": "Güvenlik kodu doğrulanamadı. Lütfen yeniden deneyin."
+  },
+  "common": {
+    "all": "Tümü",
+    "name": "Ad",
+    "description": "Açıklama",
+    "actions": "İşlemler",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "edit": "Güncelle",
+    "delete": "Sil",
+    "view": "Görüntüle",
+    "add": "Ekle",
+    "optional": "(Opsiyonel)",
+    "clean": "Temizle",
+    "createdAt": "Oluşturulma Tarihi",
+    "updatedAt": "Güncellenme Tarihi",
+    "no": "HAYIR",
+    "yes": "EVET",
+    "backToList": "Listeye Dön",
+    "saving": "Kaydediliyor...",
+    "updating": "Güncelleniyor...",
+    "update": "Güncelle"
+  },
+  "confirmDeleteDialog": {
+    "title": "Silme İşlemini Onayla",
+    "confirmLabel": "Onaylamak için 'evet' veya 'yes' yazın",
+    "confirmPlaceholder": "evet",
+    "confirmText": "Sil",
+    "cancelText": "İptal"
+  },
+  "error": {
+    "internalServerError": "Dahili sunucu hatası",
+    "server.not.reachable": "Sunucuya ulaşılabilir değil",
+    "url.not.found": "Bulunamadı",
+    "NotNull": "{{fieldName}} alanı boş bırakılamaz!",
+    "Size": "{{fieldName}} alanı min/max gerekliliklere uymuyor!",
+    "userexists": "Bu kullanıcı adı daha önce alınmış!",
+    "emailexists": "Bu E-posta adresi zaten kullanılıyor!",
+    "idexists": "Yeni bir {{entityName}} eklenirken ID dolu olamaz",
+    "idnull": "Geçersiz ID",
+    "idinvalid": "Geçersiz Id",
+    "idnotfound": "ID bulunamadı",
+    "file": {
+      "could.not.extract": "Dosya çıkarılamadı",
+      "not.image": "Dosyanın bir resim olması bekleniyordu; ancak \"{{ fileType }}\" oldugu bulundu"
+    }
+  },
+  "errors": {
+    "title": "Hata Sayfası!",
+    "http": {
+      "400": "Hatalı istek.",
+      "403": "Bu sayfaya erişmeye yetkiniz yoktur.",
+      "404": "Bu sayfa mevcut değil.",
+      "405": "Kullandığınız HTTP metodu bu URL için desteklenmiyor.",
+      "500": "Dahili sunucu hatası."
+    },
+    "concurrencyFailure": "Farklı bir kullanıcı bu verileri sizinle aynı anda değiştirdi. Bu yüzden değişiklikleriniz reddedildi.",
+    "validation": "Sunucuda doğrulama hatası oluştu."
+  },
+  "global": {
+    "title": "Weather-Aware Truck Routing",
+    "browsehappy": "Güncel olmayan bir tarayıcı kullanıyorsunuz. Lütfen kullanım kalitenizi arttırmak için <a href=\"http://browsehappy.com/?locale=tr\">tarayıcınızı yükseltin</a>.",
+    "menu": {
+      "home": "Ana Sayfa",
+      "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
+      "entities": {
+        "main": "Varlıklar",
+        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
+        "codeFlow": "Flow Editor",
+        "codeAi": "Özetle",
+        "codeElement": "Tablolar",
+        "codeItem": "Tanımlar",
+        "operFile": "Dosyalar",
+        "operLog": "Log Kayıtları",
+        "operOut": "Output",
+        "viewItemDash": "Dashboardlar"
+      },
+      "account": {
+        "main": "Hesap",
+        "settings": "Ayarlar",
+        "password": "Şifre",
+        "sessions": "Oturumlar",
+        "login": "Giriş",
+        "logout": "Çıkış",
+        "register": "Kayıt"
+      },
+      "admin": {
+        "main": "Yönetim",
+        "userManagement": "Kullanıcı yönetimi",
+        "tracker": "Kullanıcı Takip",
+        "metrics": "Ölçümler",
+        "health": "Sağlık",
+        "configuration": "Yapılandırma",
+        "logs": "Sistem günlükleri",
+        "apidocs": "API",
+        "database": "Veritabanı",
+        "jhipster-needle-menu-add-admin-element": "JHipster will add additional menu entries here (do not translate!)"
+      },
+      "language": "Dil"
+    },
+    "form": {
+      "username.label": "Kullanıcı Adı",
+      "username.placeholder": "Kullanıcı Adınız",
+      "currentpassword.label": "Mevcut Şifre",
+      "currentpassword.placeholder": "Mevcut Şifreniz",
+      "newpassword.label": "Yeni Şifre",
+      "newpassword.placeholder": "Yeni Şifreniz",
+      "confirmpassword.label": "Yeni Şifre Doğrulama",
+      "confirmpassword.placeholder": "Yeni Şifrenizi Doğrulayınız",
+      "email.label": "E-posta",
+      "email.placeholder": "E-posta adresiniz"
+    },
+    "messages": {
+      "info": {
+        "authenticated": {
+          "prefix": "",
+          "link": "Giriş",
+          "suffix": " yapmak istiyorsanız, varsayılan hesaplardan birini deneyebilirsiniz:<br/>- Yönetici (kullanıcı adı=\"admin\" ve şifre=\"admin\") <br/>- Kullanıcı (kullanıcı adı=\"user\" and şifre=\"user\")."
+        },
+        "register": {
+          "noaccount": "Henüz bir hesabınız yok mu?",
+          "link": "Yeni hesap oluştur"
+        }
+      },
+      "error": {
+        "dontmatch": "Şifreler eşleşmedi!"
+      },
+      "validate": {
+        "newpassword": {
+          "required": "Şifre zorunlu alandır.",
+          "minlength": "Şifreniz en az 4 karakter olmak zorundadır",
+          "maxlength": "Şifreniz 50 karakterden uzun olamaz",
+          "strength": "Şifre karmaşıklığı:"
+        },
+        "confirmpassword": {
+          "required": "Doğrulama şifresi zorunludur.",
+          "minlength": "Doğrulama şifreniz en az 4 karakter olmalıdır",
+          "maxlength": "Doğrulama şifreniz 50 karakterden uzun olamaz"
+        },
+        "email": {
+          "required": "E-posta adresiniz zorunludur.",
+          "invalid": "E-posta adresiniz uygun değil.",
+          "minlength": "E-posta adresiniz en az 5 karakter olmalıdır",
+          "maxlength": "E-posta adresiniz 50 karakterden fazla olamaz"
+        }
+      }
+    },
+    "field": {
+      "id": "ID"
+    },
+    "ribbon": {
+      "dev": "Geliştirme Modu"
+    },
+    "item-count": "Toplam {{total}} kaydın {{first}} - {{second}} arası gösteriliyor."
+  },
+  "home": {
+    "welcome": "Hoş geldiniz",
+    "subtitle": "Başlamak için bir modül seçin."
+  },
+  "login": {
+    "title": "Giriş",
+    "login": "Giriş Yap",
+    "form": {
+      "email": "E-posta Adresi",
+      "password": "Şifre",
+      "password.placeholder": "Şifre",
+      "rememberme": "Beni Hatırla",
+      "remember_me": "Beni Hatırla",
+      "button": "Giriş"
+    },
+    "messages": {
+      "error": {
+        "authentication": "Giriş işlemi başarısız oldu! Lütfen kullanıcı bilgilerinizi kontrol edip tekrar deneyin.",
+        "enter_email": "Lütfen e-posta adresinizi girin.",
+        "enter_password": "Lütfen şifrenizi girin.",
+        "password_format": "Şifre 40 karakteri geçemez.",
+        "recaptcha_failed": "reCAPTCHA doğrulaması başarısız oldu!",
+        "email_password_format": "Geçersiz e-posta veya şifre."
+      }
+    },
+    "password": {
+      "forgot": "Şifreni mi unuttun?",
+      "charCount": "Şifre en fazla 40 karakter olabilir. Mevcut uzunluk:"
+    }
+  },
+  "modernTable": {
+    "loadingMessage": "Güncelleniyor...",
+    "emptyMessage": "Kayıt bulunamadı",
+    "pagination": {
+      "show": "Göster:",
+      "records": "kayıt"
+    },
+    "actions": {
+      "view": "Görüntüle",
+      "edit": "Düzenle",
+      "delete": "Sil",
+      "setActive": "Aktif Yap",
+      "setInactive": "Pasif Yap"
+    },
+    "deleteConfirm": {
+      "fallback": "Bu kaydı silmek istediğinize emin misiniz?",
+      "confirmWord": "evet"
+    }
+  },
+  "passwordStrengthBar": {
+    "label": "Şifre güçlülüğü:"
+  },
+  "profile": {
+    "passwordRequired": "Şifre gereklidir.",
+    "passwordLengthRequirement": "Şifre en az 8 karakter uzunluğunda olmalı ve 40 karakteri geçmemelidir.",
+    "passwordMustContainLowercase": "Şifre en az bir küçük harf içermelidir (a-z).",
+    "passwordMustContainUppercase": "Şifre en az bir büyük harf içermelidir (A-Z).",
+    "passwordMustContainNumber": "Şifre en az bir numara içermelidir (0-9).",
+    "passwordMustContainSpecialChar": "Şifre en az bir özel karakter içermelidir (!@#$%^&* vb.).",
+    "passwordMismatch": "Şifreler eşleşmiyor. Lütfen tekrar deneyin.",
+    "passwordTooCommon": "Şifreniz çok yaygın. Lütfen daha güvenli bir şifre seçin.",
+    "weakPasswordWarning": "Şifreniz çok zayıf. Lütfen daha güçlü bir şifre seçin.",
+    "oldPasswordWrong": "Eski şifre yanlış. Lütfen tekrar deneyin.",
+    "samePasswordWarning": "Yeni şifre eski şifre ile aynı olamaz.",
+    "confirmNewPassword": "Yeni Şifreyi Onayla",
+    "oldPassword": "Eski Şifre",
+    "newPassword": "Yeni Şifre",
+    "changeMyPassword": "Şifremi Değiştir",
+    "cancel": "İptal",
+    "generateRandomPassword": "Rastgele Şifre Oluştur",
+    "passwordLengthLabel": "Şifre Uzunluğu",
+    "change_password_success": "Şifreniz başarılı bir şekilde değiştirilmiştir.",
+    "single_initial": "Tek Baş Harf",
+    "double_initial": "Çift Baş Harf",
+    "file": "Dosya Seç",
+    "no_file_selected": "Seçilen Dosya Yok",
+    "user_avatar": "Kullanıcı Avatarı",
+    "no_avatar": "Avatar Yok",
+    "change_avatar": "Avatarı Değiştir",
+    "use_initials_avatar": "Baş Harfler Avatarı Kullan",
+    "initials_type": "Baş Harfler Tipi",
+    "save": "Kaydet",
+    "email": "E-posta",
+    "role": "Rol",
+    "groups": "Gruplar",
+    "save_avatar_type": "Lütfen avatarınızı değiştirmeden önce avatar tipi seçiminizi kaydedin.",
+    "uploading": "Yükleniyor..."
+  },
+  "search": {
+    "title": "Ara",
+    "placeholder": "Ara",
+    "noOptionsText": "Sonuç bulunamadı"
+  },
+  "settings": {
+    "title": "Kullanıcı ayarları [{{username}}]",
+    "form": {
+      "firstname": "İsim",
+      "firstname.placeholder": "Adınız",
+      "lastname": "Soyisim",
+      "lastname.placeholder": "Soyadınız",
+      "language": "Dil",
+      "button": "Kaydet"
+    },
+    "messages": {
+      "error": {
+        "fail": "Bir hata oluştu! Ayarlar kaydedilemedi.",
+        "emailexists": "Email adresi zaten kullanılıyor! Lütfen başka bir mail seçiniz."
+      },
+      "success": "Ayarlar kaydedildi!",
+      "validate": {
+        "firstname": {
+          "required": "İsim zorunludur.",
+          "minlength": "İsim en az 1 karakter olmak zorundadır",
+          "maxlength": "İsim en fazla 50 karakter olabilir"
+        },
+        "lastname": {
+          "required": "Soyisim zorunludur.",
+          "minlength": "Soyisim en az 1 karakter olmak zorundadır",
+          "maxlength": "Soyisim en fazla 50 karakter olabilir"
+        }
+      }
+    }
+  },
+  "userForm": {
+    "title": {
+      "edit": "Kullanıcı Düzenle",
+      "create": "Yeni Kullanıcı"
+    },
+    "subtitle": {
+      "edit": "Kullanıcı bilgilerini güncelleyin",
+      "create": "Sisteme yeni kullanıcı ekleyin"
+    },
+    "avatar": {
+      "sectionTitle": "Profil Avatarı",
+      "useInitials": "İsim Baş Harfleri",
+      "useImage": "Resim",
+      "singleLetter": "Tek Harf",
+      "doubleLetter": "İki Harf"
+    },
+    "personalInfo": {
+      "sectionTitle": "Kişisel Bilgiler",
+      "firstName": "Ad",
+      "firstNameRequired": "Ad alanı zorunludur",
+      "firstNameMaxLength": "Ad en fazla 100 karakter olabilir",
+      "firstNameMinLength": "Ad en az 1 karakter olmalıdır",
+      "lastName": "Soyad",
+      "lastNameRequired": "Soyad alanı zorunludur",
+      "lastNameMaxLength": "Soyad en fazla 100 karakter olabilir",
+      "lastNameMinLength": "Soyad en az 1 karakter olmalıdır",
+      "email": "E-posta",
+      "emailRequired": "E-posta zorunludur",
+      "emailMaxLength": "E-posta en fazla 255 karakter olabilir",
+      "emailAsciiOnly": "E-posta adresi yalnızca İngilizce karakter içerebilir",
+      "emailInvalid": "Geçerli bir e-posta adresi giriniz",
+      "emailPlaceholder": "ornek@email.com"
+    },
+    "rolePermissions": {
+      "sectionTitle": "Rol & Yetkiler",
+      "role": "Rol",
+      "roleRequired": "Rol seçimi zorunludur",
+      "roleNotFound": "Rol bulunamadı"
+    },
+    "accountStatus": {
+      "sectionTitle": "Hesap Durumu",
+      "expireDate": "Son Kullanma Tarihi",
+      "active": "Aktif",
+      "activeDescription": "Kullanıcı hesabı aktif",
+      "invalidDate": "Geçerli bir tarih giriniz",
+      "pastDate": "Son kullanma tarihi bugünden sonra olmalıdır"
+    },
+    "password": {
+      "sectionTitle": "Şifre",
+      "password": "Şifre",
+      "passwordRequired": "Şifre alanı zorunludur",
+      "passwordMinLength": "Şifre en az 8 karakter olmalıdır",
+      "hasLowercase": "Küçük harf içermelidir",
+      "hasUppercase": "Büyük harf içermelidir",
+      "hasNumber": "Rakam içermelidir",
+      "hasSpecialChar": "Özel karakter içermelidir",
+      "tooWeak": "Şifre çok zayıf",
+      "confirmPassword": "Şifre Tekrar",
+      "confirmPasswordRequired": "Şifre tekrarı zorunludur",
+      "passwordMismatch": "Şifreler eşleşmiyor",
+      "generateRandom": "Rastgele Şifre Oluştur",
+      "dialogTitle": "Rastgele Şifre Oluştur",
+      "dialogLengthLabel": "Şifre Uzunluğu: {{length}}",
+      "dialogGenerate": "Oluştur"
+    },
+    "actions": {
+      "cancel": "İptal",
+      "save": "Kaydet",
+      "update": "Güncelle"
+    }
+  },
+  "userList": {
+    "title": "Kullanıcı Yönetimi",
+    "subtitle": "Sistemdeki tüm kullanıcıları görüntüleyin ve yönetin",
+    "addButton": "EKLE",
+    "searchPlaceholder": "Ad, soyad, email veya rol ile ara...",
+    "emptyMessage": "Kullanıcı bulunamadı",
+    "tabs": {
+      "all": "Tümü",
+      "active": "Aktif",
+      "inactive": "Pasif"
+    },
+    "columns": {
+      "user": "Kullanıcı",
+      "contact": "İletişim",
+      "rolePermission": "Rol & Yetki",
+      "status": "Durum"
+    },
+    "status": {
+      "active": "Aktif",
+      "inactive": "Pasif"
+    },
+    "deleteConfirm": {
+      "unknownUser": "Bilinmeyen kullanıcı",
+      "message": "\"{{email}}\" kullanıcısını silmek istediğinize emin misiniz? Bu işlem geri alınamaz.",
+      "fallback": "Bu kullanıcıyı silmek istediğinize emin misiniz?",
+      "confirmWord": "evet"
+    },
+    "errors": {
+      "roleNotFound": "Kullanıcının rolü bulunamadı!",
+      "insufficientRank": "Bu işlemi gerçekleştirmek için yetkiniz bulunmuyor. Kendi rütbenizden düşük rütbeli kullanıcılar üzerinde işlem yapabilirsiniz."
+    }
+  },
+  "menu": {
+    "home": "Ana Sayfa",
+    "management": "Yönetim",
+    "users": "Kullanıcılar",
+    "roles": "Roller",
+    "planner": "Rota Planlayıcı"
+  },
+  "header": {
+    "language": "Dil",
+    "profile": "Profil",
+    "changePassword": "Şifre Değiştir",
+    "settings": "Ayarlar",
+    "logout": "Çıkış Yap"
+  },
+  "loginPage": {
+    "tagline": "Güvenli ve kolay erişim. Devam etmek için giriş yapın.",
+    "title": "Sisteme Giriş",
+    "subtitle": "Devam etmek için bilgilerinizi girin",
+    "email": "E-posta",
+    "password": "Şifre",
+    "rememberMe": "Beni hatırla",
+    "submit": "Giriş Yap",
+    "errors": {
+      "emailRequired": "Lütfen e-posta adresinizi girin.",
+      "emailInvalid": "Lütfen geçerli bir e-posta adresi girin.",
+      "passwordRequired": "Lütfen şifrenizi girin."
+    }
+  },
+  "settingsPage": {
+    "title": "Ayarlar",
+    "fontSize": "Yazı boyutu",
+    "fontSizeDescription": "Uygulama genelindeki yazı boyutunu ayarlayın.",
+    "language": "Dil"
+  },
+  "notFound": {
+    "message": "Aradığınız sayfa bulunamadı.",
+    "backHome": "Ana sayfaya dön"
+  },
+  "planner": {
+    "title": "Hava Durumuna Duyarlı Tır Rotalama",
+    "subtitle": "Üç tır rotasını, her kontrol noktasına varış saatindeki hava riskine göre karşılaştırın.",
+    "form": {
+      "origin": "Başlangıç",
+      "destination": "Varış",
+      "swap": "Başlangıç ve varışı değiştir",
+      "departure": "Kalkış",
+      "load": "Yük ağırlığı",
+      "interval": "Hava kontrol noktası aralığı",
+      "submit": "Rotaları planla",
+      "required": "Zorunlu",
+      "departureRange": "Önümüzdeki {{days}} gün içinde bir zaman seçin",
+      "loadRange": "0 – {{max}} lb girin",
+      "typeToSearch": "En az 3 karakter yazın",
+      "noPlaces": "Yer bulunamadı",
+      "searchFailed": "Yer araması başarısız"
+    },
+    "routes": {
+      "recommended": "Önerilen",
+      "recommendedRoute": "Önerilen",
+      "distance": "Mesafe",
+      "duration": "Sürüş süresi",
+      "arrival": "Varış",
+      "severe": "Şiddetli+ mil",
+      "high": "Yüksek mil",
+      "avgRisk": "Ort. risk",
+      "worst": "En kötü",
+      "noTravelWarning": "{{miles}} mil Seyahat Edilemez koşul"
+    },
+    "checkpoints": {
+      "title": "Her {{miles}} milde kontrol noktası",
+      "mile": "Mil",
+      "eta": "Varış",
+      "wind": "Rüzgar",
+      "gust": "hamle",
+      "rain": "Yağmur",
+      "snow": "Kar",
+      "risk": "Risk",
+      "loadAdjusted": "Yük ağırlığı rüzgar kuralıyla yükseltildi"
+    },
+    "risk": {
+      "low": "Düşük",
+      "moderate": "Orta",
+      "high": "Yüksek",
+      "severe": "Şiddetli",
+      "no_travel": "Seyahat Edilemez",
+      "unknown": "Tahmin yok"
+    },
+    "heatmap": {
+      "title": "Hava tahmini",
+      "toggle": "Isı haritasını göster",
+      "play": "Oynat",
+      "pause": "Duraklat",
+      "hour": "Tahmin saati",
+      "metric": {
+        "risk": "Risk",
+        "wind": "Rüzgar",
+        "rain": "Yağmur",
+        "snow": "Kar"
+      }
+    },
+    "errors": {
+      "generic": "Sefer planlanamadı. Lütfen tekrar deneyin."
+    }
+  }
+}

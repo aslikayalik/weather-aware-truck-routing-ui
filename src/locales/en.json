@@ -1,0 +1,467 @@
+{
+  "captcha": {
+    "label": "Security Code",
+    "placeholder": "Enter the code above",
+    "refresh": "Refresh",
+    "loading": "Loading captcha...",
+    "imageError": "Image could not be loaded",
+    "checkBackend": "Check backend settings",
+    "required": "Please enter the security code.",
+    "invalid": "Security code is incorrect. Please try again.",
+    "validationError": "Security code could not be validated. Please try again."
+  },
+  "common": {
+    "all": "All",
+    "name": "Name",
+    "description": "DESCRIPTION",
+    "actions": "ACTIONS",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "view": "View",
+    "add": "Add",
+    "optional": "(Optional)",
+    "clean": "Clear",
+    "createdAt": "Created At",
+    "updatedAt": "Updated At",
+    "no": "NO",
+    "yes": "YES",
+    "backToList": "Back to List",
+    "saving": "Saving...",
+    "updating": "Updating...",
+    "update": "Update"
+  },
+  "confirmDeleteDialog": {
+    "title": "Confirm Delete",
+    "confirmLabel": "Type 'evet' or 'yes' to confirm",
+    "confirmPlaceholder": "yes",
+    "confirmText": "Delete",
+    "cancelText": "Cancel"
+  },
+  "error": {
+    "internalServerError": "Internal server error",
+    "server.not.reachable": "Server not reachable",
+    "url.not.found": "Not found",
+    "NotNull": "Field {{ fieldName }} cannot be empty!",
+    "Size": "Field {{ fieldName }} does not meet min/max size requirements!",
+    "userexists": "Login name already used!",
+    "emailexists": "Email is already in use!",
+    "idexists": "A new {{ entityName }} cannot already have an ID",
+    "idnull": "Invalid ID",
+    "idinvalid": "Invalid ID",
+    "idnotfound": "ID cannot be found",
+    "file": {
+      "could.not.extract": "Could not extract file",
+      "not.image": "File was expected to be an image but was found to be \"{{ fileType }}\""
+    }
+  },
+  "errors": {
+    "title": "Error page!",
+    "http": {
+      "400": "Bad request.",
+      "403": "You are not authorized to access this page.",
+      "404": "The page does not exist.",
+      "405": "The HTTP verb you used is not supported for this URL.",
+      "500": "Internal server error."
+    },
+    "concurrencyFailure": "Another user modified this data at the same time as you. Your changes were rejected.",
+    "validation": "Validation error on the server."
+  },
+  "global": {
+    "title": "Weather-Aware Truck Routing",
+    "browsehappy": "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/?locale=en\">upgrade your browser</a> to improve your experience.",
+    "menu": {
+      "home": "Home",
+      "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
+      "entities": {
+        "main": "Entities",
+        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
+        "codeFlow": "Flow Editor",
+        "codeAi": "Summarize",
+        "codeElement": "Tables",
+        "codeItem": "Defines",
+        "operFile": "Files",
+        "operLog": "Logs",
+        "operOut": "Output",
+        "viewItemDash": "Dashboards"
+      },
+      "account": {
+        "main": "Account",
+        "settings": "Settings",
+        "password": "Password",
+        "sessions": "Sessions",
+        "login": "Sign in",
+        "logout": "Sign out",
+        "register": "Register"
+      },
+      "admin": {
+        "main": "Administration",
+        "userManagement": "User management",
+        "tracker": "User tracker",
+        "metrics": "Metrics",
+        "health": "Health",
+        "configuration": "Configuration",
+        "logs": "Logs",
+        "apidocs": "API",
+        "database": "Database",
+        "jhipster-needle-menu-add-admin-element": "JHipster will add additional menu entries here (do not translate!)"
+      },
+      "language": "Language"
+    },
+    "form": {
+      "username.label": "Username",
+      "username.placeholder": "Your username",
+      "currentpassword.label": "Current password",
+      "currentpassword.placeholder": "Current password",
+      "newpassword.label": "New password",
+      "newpassword.placeholder": "New password",
+      "confirmpassword.label": "New password confirmation",
+      "confirmpassword.placeholder": "Confirm the new password",
+      "email.label": "Email",
+      "email.placeholder": "Your email"
+    },
+    "messages": {
+      "info": {
+        "authenticated": {
+          "prefix": "If you want to ",
+          "link": "sign in",
+          "suffix": ", you can try the default accounts:<br/>- Administrator (login=\"admin\" and password=\"admin\") <br/>- User (login=\"user\" and password=\"user\")."
+        },
+        "register": {
+          "noaccount": "You don't have an account yet?",
+          "link": "Register a new account"
+        }
+      },
+      "error": {
+        "dontmatch": "The password and its confirmation do not match!"
+      },
+      "validate": {
+        "newpassword": {
+          "required": "Your password is required.",
+          "minlength": "Your password is required to be at least 8 characters.",
+          "maxlength": "Your password cannot be longer than 50 characters.",
+          "strength": "Password strength:"
+        },
+        "confirmpassword": {
+          "required": "Your confirmation password is required.",
+          "minlength": "Your confirmation password is required to be at least 4 characters.",
+          "maxlength": "Your confirmation password cannot be longer than 50 characters."
+        },
+        "email": {
+          "required": "Your email is required.",
+          "invalid": "Your email is invalid.",
+          "minlength": "Your email is required to be at least 5 characters.",
+          "maxlength": "Your email cannot be longer than 50 characters."
+        }
+      }
+    },
+    "field": {
+      "id": "ID"
+    },
+    "ribbon": {
+      "dev": "Development"
+    },
+    "item-count": "Showing {{first}} - {{second}} of {{total}} items."
+  },
+  "home": {
+    "welcome": "Welcome",
+    "subtitle": "Select a module to get started."
+  },
+  "login": {
+    "title": "Sign in",
+    "login": "Log In",
+    "form": {
+      "email": "Email Address",
+      "password": "Password",
+      "password.placeholder": "Your password",
+      "rememberme": "Remember me",
+      "remember_me": "Remember me",
+      "button": "Sign in"
+    },
+    "messages": {
+      "error": {
+        "authentication": "Failed to sign in! Please check your credentials and try again.",
+        "enter_email": "Please enter your email address.",
+        "enter_password": "Please enter your password.",
+        "password_format": "Password cannot exceed 40 characters.",
+        "recaptcha_failed": "reCAPTCHA verification failed!",
+        "email_password_format": "Invalid email or password."
+      }
+    },
+    "password": {
+      "forgot": "Did you forget your password?",
+      "charCount": "Password can be up to 40 characters. Available length:"
+    }
+  },
+  "modernTable": {
+    "loadingMessage": "Updating...",
+    "emptyMessage": "No records found",
+    "pagination": {
+      "show": "Show:",
+      "records": "records"
+    },
+    "actions": {
+      "view": "View",
+      "edit": "Edit",
+      "delete": "Delete",
+      "setActive": "Set Active",
+      "setInactive": "Set Inactive"
+    },
+    "deleteConfirm": {
+      "fallback": "Are you sure you want to delete this record?",
+      "confirmWord": "yes"
+    }
+  },
+  "passwordStrengthBar": {
+    "label": "Password strength:"
+  },
+  "profile": {
+    "passwordRequired": "Password is required.",
+    "passwordLengthRequirement": "Password must be at least 8 characters long and cannot exceed 40 characters.",
+    "passwordMustContainLowercase": "Password must contain at least one lowercase letter (a-z).",
+    "passwordMustContainUppercase": "Password must contain at least one uppercase letter (A-Z).",
+    "passwordMustContainNumber": "Password must contain at least one number (0-9).",
+    "passwordMustContainSpecialChar": "Password must contain at least one special character (!@#$%^&* etc.).",
+    "passwordMismatch": "Passwords do not match. Please try again.",
+    "passwordTooCommon": "Your password is too common. Please choose a more secure password.",
+    "weakPasswordWarning": "Your password is too weak. Please choose a stronger password.",
+    "oldPasswordWrong": "The old password is incorrect. Please try again.",
+    "samePasswordWarning": "New password cannot be the same as old password.",
+    "confirmNewPassword": "Confirm New Password",
+    "oldPassword": "Old password",
+    "newPassword": "New password",
+    "changeMyPassword": "Change My Password",
+    "cancel": "Cancel",
+    "generateRandomPassword": "Generate Password",
+    "passwordLengthLabel": "Password Length",
+    "change_password_success": "Your password has been successfully changed.",
+    "single_initial": "Single Initial",
+    "double_initial": "Double Initial",
+    "file": "SELECT FILE",
+    "no_file_selected": "No File Selected",
+    "user_avatar": "User Avatar",
+    "no_avatar": "No Avatar",
+    "change_avatar": "Change Avatar",
+    "use_initials_avatar": "Use Initials Avatar",
+    "initials_type": "Initials Type",
+    "save": "Save",
+    "email": "Email",
+    "role": "Role",
+    "groups": "Groups At",
+    "save_avatar_type": "Please save your avatar type selection before changing the avatar.",
+    "uploading": "Uploading..."
+  },
+  "search": {
+    "title": "Search",
+    "placeholder": "Search",
+    "noOptionsText": "No options"
+  },
+  "userForm": {
+    "title": {
+      "edit": "Edit User",
+      "create": "New User"
+    },
+    "subtitle": {
+      "edit": "Update user information",
+      "create": "Add a new user to the system"
+    },
+    "avatar": {
+      "sectionTitle": "Profile Avatar",
+      "useInitials": "Name Initials",
+      "useImage": "Image",
+      "singleLetter": "Single Letter",
+      "doubleLetter": "Two Letters"
+    },
+    "personalInfo": {
+      "sectionTitle": "Personal Information",
+      "firstName": "First Name",
+      "firstNameRequired": "First name is required",
+      "firstNameMaxLength": "First name can be at most 50 characters",
+      "firstNameMinLength": "First name must be at least 1 character",
+      "lastName": "Last Name",
+      "lastNameRequired": "Last name is required",
+      "lastNameMaxLength": "Last name can be at most 50 characters",
+      "lastNameMinLength": "Last name must be at least 1 character",
+      "email": "Email",
+      "emailRequired": "Email is required",
+      "emailMaxLength": "Email can be at most 255 characters",
+      "emailAsciiOnly": "Email address can only contain English characters",
+      "emailInvalid": "Please enter a valid email address",
+      "emailPlaceholder": "example@email.com"
+    },
+    "rolePermissions": {
+      "sectionTitle": "Role & Permissions",
+      "role": "Role",
+      "roleRequired": "Role selection is required",
+      "roleNotFound": "No roles found"
+    },
+    "accountStatus": {
+      "sectionTitle": "Account Status",
+      "expireDate": "Expiry Date",
+      "active": "Active",
+      "activeDescription": "User account is active",
+      "invalidDate": "Please enter a valid date",
+      "pastDate": "Expiry date must be after today"
+    },
+    "password": {
+      "sectionTitle": "Password",
+      "password": "Password",
+      "passwordRequired": "Password is required",
+      "passwordMinLength": "Password must be at least 8 characters",
+      "hasLowercase": "Must contain a lowercase letter",
+      "hasUppercase": "Must contain an uppercase letter",
+      "hasNumber": "Must contain a number",
+      "hasSpecialChar": "Must contain a special character",
+      "tooWeak": "Password is too weak",
+      "confirmPassword": "Confirm Password",
+      "confirmPasswordRequired": "Password confirmation is required",
+      "passwordMismatch": "Passwords do not match",
+      "generateRandom": "Generate Random Password",
+      "dialogTitle": "Generate Random Password",
+      "dialogLengthLabel": "Password Length: {{length}}",
+      "dialogGenerate": "Generate"
+    },
+    "actions": {
+      "cancel": "Cancel",
+      "save": "Save",
+      "update": "Update"
+    }
+  },
+  "userList": {
+    "title": "User Management",
+    "subtitle": "View and manage all users in the system",
+    "addButton": "ADD",
+    "searchPlaceholder": "Search by name, surname, email or role...",
+    "emptyMessage": "No users found",
+    "tabs": {
+      "all": "All",
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "columns": {
+      "user": "User",
+      "contact": "Contact",
+      "rolePermission": "ROLE & PERMISSION",
+      "status": "Status"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "deleteConfirm": {
+      "unknownUser": "Unknown user",
+      "message": "Are you sure you want to delete \"{{email}}\"? This action cannot be undone.",
+      "fallback": "Are you sure you want to delete this user?",
+      "confirmWord": "yes"
+    },
+    "errors": {
+      "roleNotFound": "User role not found!",
+      "insufficientRank": "You do not have permission to perform this action. You can only manage users with a lower rank than your own."
+    }
+  },
+  "menu": {
+    "home": "Home",
+    "management": "Management",
+    "users": "Users",
+    "roles": "Roles",
+    "planner": "Route Planner"
+  },
+  "header": {
+    "language": "Language",
+    "profile": "Profile",
+    "changePassword": "Change Password",
+    "settings": "Settings",
+    "logout": "Log out"
+  },
+  "loginPage": {
+    "tagline": "Secure and easy access. Sign in to continue.",
+    "title": "Sign In",
+    "subtitle": "Enter your credentials to continue",
+    "email": "Email",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "submit": "Sign In",
+    "errors": {
+      "emailRequired": "Please enter your email address.",
+      "emailInvalid": "Please enter a valid email address.",
+      "passwordRequired": "Please enter your password."
+    }
+  },
+  "settingsPage": {
+    "title": "Settings",
+    "fontSize": "Font size",
+    "fontSizeDescription": "Adjust the font size across the application.",
+    "language": "Language"
+  },
+  "notFound": {
+    "message": "The page you are looking for was not found.",
+    "backHome": "Back to home"
+  },
+  "planner": {
+    "title": "Weather-Aware Truck Routing",
+    "subtitle": "Compare three truck routes by weather risk at each checkpoint’s arrival time.",
+    "form": {
+      "origin": "Origin",
+      "destination": "Destination",
+      "swap": "Swap origin and destination",
+      "departure": "Departure",
+      "load": "Load weight",
+      "interval": "Weather checkpoint every",
+      "submit": "Plan routes",
+      "required": "Required",
+      "departureRange": "Choose a time within the next {{days}} days",
+      "loadRange": "Enter 0 – {{max}} lb",
+      "typeToSearch": "Type at least 3 characters",
+      "noPlaces": "No places found",
+      "searchFailed": "Place search failed"
+    },
+    "routes": {
+      "recommended": "Recommended",
+      "recommendedRoute": "Recommended",
+      "distance": "Distance",
+      "duration": "Drive time",
+      "arrival": "Arrival",
+      "severe": "Severe+ mi",
+      "high": "High mi",
+      "avgRisk": "Avg risk",
+      "worst": "Worst",
+      "noTravelWarning": "{{miles}} mi of No Travel conditions"
+    },
+    "checkpoints": {
+      "title": "Checkpoints every {{miles}} mi",
+      "mile": "Mile",
+      "eta": "ETA",
+      "wind": "Wind",
+      "gust": "gust",
+      "rain": "Rain",
+      "snow": "Snow",
+      "risk": "Risk",
+      "loadAdjusted": "Raised by the load-weight wind rule"
+    },
+    "risk": {
+      "low": "Low",
+      "moderate": "Moderate",
+      "high": "High",
+      "severe": "Severe",
+      "no_travel": "No Travel",
+      "unknown": "No forecast"
+    },
+    "heatmap": {
+      "title": "Weather forecast",
+      "toggle": "Show heatmap",
+      "play": "Play",
+      "pause": "Pause",
+      "hour": "Forecast hour",
+      "metric": {
+        "risk": "Risk",
+        "wind": "Wind",
+        "rain": "Rain",
+        "snow": "Snow"
+      }
+    },
+    "errors": {
+      "generic": "Could not plan the trip. Please try again."
+    }
+  }
+}
