@@ -38,6 +38,8 @@ module.exports = async options => {
   const envVars = {
     ...(require('dotenv').config({ path: envPath }).parsed || {}),
     ...(fs.existsSync(envLocalPath) ? require('dotenv').config({ path: envLocalPath }).parsed || {} : {}),
+    // Hosting platforms provide configuration as real environment variables, not a .env file.
+    ...Object.fromEntries(Object.entries(process.env).filter(([key]) => key.startsWith('REACT_APP_'))),
   };
 
   return merge({
