@@ -491,7 +491,10 @@
       }
     },
     "errors": {
-      "generic": "Sefer planlanamadı. Lütfen tekrar deneyin."
+      "generic": "Sefer planlanamadı. Lütfen tekrar deneyin.",
+      "network": "Sunucuya ulaşılamadı. Bağlantınızı kontrol edip tekrar deneyin.",
+      "timeout": "Sunucu zamanında yanıt vermedi. Lütfen tekrar deneyin.",
+      "server": "Sefer planlanırken sunucuda bir sorun oluştu. Lütfen biraz sonra tekrar deneyin."
     }
   }
 }

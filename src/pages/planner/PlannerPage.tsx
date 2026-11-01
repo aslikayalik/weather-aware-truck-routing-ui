@@ -1,6 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import dayjs from 'dayjs';
 import { useTranslation } from 'react-i18next';
+import type { TFunction } from 'i18next';
 import { Alert, Box, LinearProgress, Paper, Stack, Typography } from '@mui/material';
 import StarIcon from '@mui/icons-material/Star';
 import { FetchBaseQueryError } from '@reduxjs/toolkit/query';
@@ -20,11 +21,26 @@ const flattenMessages = (value: unknown): string[] => {
   return [];
 };
 
-const errorMessage = (error: unknown, fallback: string) => {
-  const data = (error as FetchBaseQueryError)?.data as Record<string, unknown> | undefined;
-  if (data?.detail) return String(data.detail);
-  const messages = flattenMessages(data);
-  return messages.length ? messages.join(' ') : fallback;
+const errorMessage = (error: unknown, t: TFunction) => {
+  const { status, data } = (error ?? {}) as FetchBaseQueryError;
+  // Only JSON bodies carry a message meant for users; HTML error pages are ignored.
+  if (data && typeof data === 'object') {
+    const detail = (data as Record<string, unknown>).detail;
+    if (detail) return String(detail);
+    const messages = flattenMessages(data);
+    if (messages.length) return messages.join(' ');
+  }
+  const code = status === 'PARSING_ERROR' ? (error as { originalStatus?: number }).originalStatus : status;
+  if (code === 'FETCH_ERROR') {
+    return t('planner.errors.network', 'Could not reach the server. Check your connection and try again.');
+  }
+  if (code === 'TIMEOUT_ERROR' || code === 504) {
+    return t('planner.errors.timeout', 'The server took too long to respond. Please try again.');
+  }
+  if (typeof code === 'number' && code >= 500) {
+    return t('planner.errors.server', 'The server ran into a problem while planning this trip. Please try again in a moment.');
+  }
+  return t('planner.errors.generic', 'Could not plan the trip. Please try again.');
 };
 
 /** Hour on the forecast slider that matches the departure time, clamped to its range. */
@@ -72,7 +88,7 @@ const PlannerPage = () => {
         setHour(departureHour(result));
         setFocusedCheckpoint(null);
       } catch (err) {
-        setError(errorMessage(err, t('planner.errors.generic', 'Could not plan the trip. Please try again.')));
+        setError(errorMessage(err, t));
       }
     },
     [planTrip, t],
